@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 
+#define parking_H
+
 using namespace std;
 
 class Parking {
@@ -11,8 +13,8 @@ private:
     string parkedVehicle[20];
 
 public:
-    Parking();
-    ~Parking();
+    Parking() {};
+    ~Parking() {};
     
     string parkVehicle();
     void removeVehicle();

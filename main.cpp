@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+    cout << "Program Running...\n";
     Parking Parking;
     Parking.menu();
 
