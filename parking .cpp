@@ -6,7 +6,7 @@ using namespace std;
 void Parking::menu() {
     cout << " " << endl;
 	cout << " " << endl;
-	cout << "\t|||||||Welcome to PARKING MANAGER|||||||" << endl;
+	cout << "\t-----Welcome to Parking Lot-----" << endl;
 	cout << " " << endl;
 	cout << " " << endl;
 	cout << " " << endl;
