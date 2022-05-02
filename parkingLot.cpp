@@ -63,7 +63,7 @@ void Parking::menu() {
             case 1:
                 {
                     string ticket = parkVehicle();
-                    cout << "\nHey there! Your ticket is : " << ticket <<"\n Thank You!\n";
+                    cout << "\nHey there! Your ticket is : " << ticket <<"\nThank You!\n";
                 }
                 break;
             
@@ -112,9 +112,9 @@ string Parking::parkVehicle() {
 
     else
     {
-        cout << "\nHello!\n Please enter the Vehicle Number : \n";
+        cout << "\nHey there, Please enter your Vehicle Number : \n";
         cin >> vehicleNumber;
-        cout << "\nPlease enter the Vehicle color : \n";
+        cout << "\nPlease enter your Vehicle color : \n";
         cin >> vehicleColor;
         string ticket = vehicleNumber + "_" + vehicleColor + "_" + to_string(slot);
         cout << "Your Car parked successfully\n";
@@ -127,13 +127,14 @@ string Parking::parkVehicle() {
 void Parking::removeVehicle() {
     string ticket;
 
-    cout <<"\n Hey there, Please enter your ticket : \n";
+    cout <<"\nHey there, Please enter your ticket : \n";
     cin >> ticket;
     int ticket_n = ticket.length();
     int slot = ticket[ticket_n-1] - '1';
     if(status[slot] == 1)
     {
         int i = 0;
+        cout<<"check";
         while(ticket[i] != '_')
         {
             if(parkedVehicle[slot][i] != ticket[i])
@@ -148,7 +149,7 @@ void Parking::removeVehicle() {
     }
     else
     {
-        cout << "\nParked car removed already Or wrong ticket\n";
+        cout << "\nParked car removed\n";
     }
 }
 
