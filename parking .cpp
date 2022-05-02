@@ -42,7 +42,8 @@ void Parking::menu() {
     while(option != 0);
 }
 
-Parking::parking() {}
+Parking::Parking() {}
+Parking::~Parking() {}
 
 string Parking::parkVehicle() {
     string vehicleNumber;
