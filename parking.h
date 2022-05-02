@@ -11,6 +11,7 @@ private:
     string parkedVehicle[20];
 
 public:
+    parking();
     string parkVehicle();
     void removeVehicle();
     //double generateBill();

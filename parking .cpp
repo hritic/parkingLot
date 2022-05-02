@@ -42,6 +42,8 @@ void Parking::menu() {
     while(option != 0);
 }
 
+Parking::parking() {}
+
 string Parking::parkVehicle() {
     string vehicleNumber;
     string vehicleColor;
