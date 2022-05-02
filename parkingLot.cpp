@@ -49,8 +49,6 @@ void Parking::menu() {
 	cout << " " << endl;
 	cout << "\t-----Welcome to Parking Lot-----" << endl;
 	cout << " " << endl;
-	cout << " " << endl;
-	cout << " " << endl;
 
     int option;
     do {
@@ -79,6 +77,7 @@ void Parking::menu() {
 
             case 0:
                 cout << "\nThank You!\n";
+                break;
             
             default:
                 cout << "\nPlease choose a valid Option!\n";
@@ -88,8 +87,6 @@ void Parking::menu() {
     while(option != 0);
 }
 
-//Parking::Parking() {}
-//Parking::~Parking() {}
 
 string Parking::parkVehicle() {
     string vehicleNumber;
